@@ -135,3 +135,9 @@ let objet18 = {
 // Si la valeur entrée dans couleur est différente de "red","blue","green" afficher une alerte et redemander d'entrée une valeur correcte
 // Si la valeur entrée dans epaisseur ou/et size ne contient pas un integer affiche une alerte et redemander d'entrée une valeur correccte
 // Si toutes les valeurs sont respectés alors afficher le résultat avec une alert "votre carré a pour size : XX px, borderaspect : dotted , ....etc
+
+// 22. Injection HTML avec Javascript
+// Rajouter un id "management" a la section avec l'aide de javascript
+// Rajouter un titre "Bienvenue" dans la balise h1 toujours en javascript
+document.getElementsByTagName("section").setAttribute("id","management")
+document.getElementsByTagName("h1").innerHTML = "Bienvenue"
