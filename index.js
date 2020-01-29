@@ -109,15 +109,16 @@ let getType = (param) => {
 // 18. Les objets 1/1
 // Créer un objet avec 2 clefs "nom" et "age", et une methode "modeling"
 // La methode attribue une valeur au nom et a l'age
-// La methode fait une alert avec comme phrase 'Bonjour "nom" tu as "age" ans'
-let objet18 = {
-    nom: "",
-    âge: "",
-    modeling = () => {
-        this.nom = "Nathan";
-        this.âge = "23";
-    }
-}
+// La methode fait une alert avec comme phrase 'Bonjour "nom" tu as "age" ans
+
+// let objet18 = {
+//     nom: "",
+//     âge: "",
+//     modeling = () => {
+//         this.nom = "Nathan";
+//         this.âge = "23";
+//     }
+// }
 //console.log(objet18);
 
 // 19. Les objets 2/2
@@ -139,5 +140,15 @@ let objet18 = {
 // 22. Injection HTML avec Javascript
 // Rajouter un id "management" a la section avec l'aide de javascript
 // Rajouter un titre "Bienvenue" dans la balise h1 toujours en javascript
-document.getElementsByTagName("section").setAttribute("id","management")
-document.getElementsByTagName("h1").innerHTML = "Bienvenue"
+document.getElementsByTagName("section")[0].setAttribute("id","management");
+document.getElementsByTagName("h1")[0].innerHTML = "Bienvenue"
+
+// 23. Les functions et le DOM
+// Ajoute un sous titre "Taches Random"
+// Ajoute un input "Tache"
+// Un bouton Ajouter
+// Créer une fonction qui :
+// Au clique du bouton ajouter, affiche la tache dans une liste avec un temps aléatoire entre 1h et 3h
+// La tache doit être formaté avec sa première lettre qui en majuscule et précédée d'un numéro de tache(attention tu ne peux pas utiliser de ol)
+let input = document.getElementById("tache");
+let bouton = document.getElementById("ajouter");
